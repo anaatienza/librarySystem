@@ -7,7 +7,7 @@ public class Book {
     private int id;
     private String isbn;
     private String title;
-    private Genre genre;
+    private Genre idGenre;
     private LocalDate publicationDate;
     private int totalCopies;
     private int author;
@@ -17,18 +17,21 @@ public class Book {
     public Book() {}
 
     //Constructor con parámetros
-    public Book(int id, int author, int editorial, int totalCopies, LocalDate publicationDate, Genre genre, String title, String isbn) {
+
+
+    public Book(int id, int editorial, int author, LocalDate publicationDate, int totalCopies, Genre idGenre, String title, String isbn) {
         this.id = id;
-        this.author = author;
         this.editorial = editorial;
-        this.totalCopies = totalCopies;
+        this.author = author;
         this.publicationDate = publicationDate;
-        this.genre = genre;
+        this.totalCopies = totalCopies;
+        this.idGenre = idGenre;
         this.title = title;
         this.isbn = isbn;
     }
 
     //Getters y Setters
+
     public int getId() {
         return id;
     }
@@ -61,20 +64,20 @@ public class Book {
         this.totalCopies = totalCopies;
     }
 
+    public Genre getIdGenre() {
+        return idGenre;
+    }
+
+    public void setIdGenre(Genre idGenre) {
+        this.idGenre = idGenre;
+    }
+
     public LocalDate getPublicationDate() {
         return publicationDate;
     }
 
     public void setPublicationDate(LocalDate publicationDate) {
         this.publicationDate = publicationDate;
-    }
-
-    public Genre getGenre() {
-        return genre;
-    }
-
-    public void setGenre(Genre genre) {
-        this.genre = genre;
     }
 
     public String getTitle() {
