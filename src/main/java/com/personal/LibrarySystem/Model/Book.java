@@ -17,8 +17,6 @@ public class Book {
     public Book() {}
 
     //Constructor con parámetros
-
-
     public Book(int id, int editorial, int author, LocalDate publicationDate, int totalCopies, Genre idGenre, String title, String isbn) {
         this.id = id;
         this.editorial = editorial;
@@ -31,68 +29,29 @@ public class Book {
     }
 
     //Getters y Setters
+    public int getId() {return id;}
+    public void setId(int id) {this.id = id;}
 
-    public int getId() {
-        return id;
-    }
+    public int getEditorial() {return editorial;}
+    public void setEditorial(int editorial) {this.editorial = editorial;}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public int getAuthor() {return author;}
+    public void setAuthor(int author) {this.author = author;}
 
-    public int getEditorial() {
-        return editorial;
-    }
+    public int getTotalCopies() {return totalCopies;}
+    public void setTotalCopies(int totalCopies) {this.totalCopies = totalCopies;}
 
-    public void setEditorial(int editorial) {
-        this.editorial = editorial;
-    }
+    public Genre getIdGenre() {return idGenre;}
+    public void setIdGenre(Genre idGenre) {this.idGenre = idGenre;}
 
-    public int getAuthor() {
-        return author;
-    }
+    public LocalDate getPublicationDate() {return publicationDate;}
+    public void setPublicationDate(LocalDate publicationDate) {this.publicationDate = publicationDate;}
 
-    public void setAuthor(int author) {
-        this.author = author;
-    }
+    public String getTitle() {return title;}
 
-    public int getTotalCopies() {
-        return totalCopies;
-    }
+    public void setTitle(String title) {this.title = title;}
 
-    public void setTotalCopies(int totalCopies) {
-        this.totalCopies = totalCopies;
-    }
+    public String getIsbn() {return isbn;}
 
-    public Genre getIdGenre() {
-        return idGenre;
-    }
-
-    public void setIdGenre(Genre idGenre) {
-        this.idGenre = idGenre;
-    }
-
-    public LocalDate getPublicationDate() {
-        return publicationDate;
-    }
-
-    public void setPublicationDate(LocalDate publicationDate) {
-        this.publicationDate = publicationDate;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
+    public void setIsbn(String isbn) {this.isbn = isbn;}
 }
