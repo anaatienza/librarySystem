@@ -1,4 +1,4 @@
-package com.personal.LibrarySystem.Model;
+package com.personal.LibrarySystem.model;
 
 public class Genre {
 
